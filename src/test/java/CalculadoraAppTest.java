@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -8,7 +9,7 @@ public class CalculadoraAppTest {
     @BeforeEach
     void configura() {
         calc = new CalculadoraApp();
-    }
+    } // before each é uma função para ser executada antes de cada teste
 
     @Test
     void testSoma() {
@@ -21,5 +22,10 @@ public class CalculadoraAppTest {
         int resultado = calc.divideInteiros(10, 5);
         assertEquals(2, resultado, "A divisão está errada.");
     }
+
+    @AfterEach
+    void limpa() {
+        calc = null;
+    } // after each é para ser executado depois de cada comando, isso libera espaço na memória a cada execução de teste
 
 }
