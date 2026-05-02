@@ -23,6 +23,16 @@ public class CalculadoraAppTest {
         assertEquals(2, resultado, "A divisão está errada.");
     }
 
+    @Test
+    void testDivisaoPorZeroLancaExcecaoComMensagemCorreta() {
+
+        ArithmeticException exception = assertThrows(ArithmeticException.class, () -> {
+            calc.dividir(10, 0);
+        });
+
+        assertEquals("Divisão por zero não permitida.", exception.getMessage());
+    } // neste caso está testando para ver se a mensagem é a mesma esperada
+
     @AfterEach
     void limpa() {
         calc = null;
