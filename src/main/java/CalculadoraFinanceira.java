@@ -1,4 +1,5 @@
 public class CalculadoraFinanceira {
+
     private final ConversorDeMoeda conversor;
 
     public CalculadoraFinanceira(ConversorDeMoeda conversor) {

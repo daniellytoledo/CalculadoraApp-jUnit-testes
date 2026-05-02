@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ServicoDePedidosTest {
     @Mock
-    private RepositorioDePedidos repositorioFalso; 
+    private RepositorioDePedidos repositorioFalso;
 
     @InjectMocks
     private ServicoDePedido servico; // recebe automaticamente o mock no construtor
