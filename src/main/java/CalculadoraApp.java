@@ -6,7 +6,7 @@ public class CalculadoraApp {
 
     public static void main (String[] args) {
         CalculadoraApp calc = new CalculadoraApp();
-        System.out.println(calc.somaInteiros(8, 2));
+        System.out.println(calc.somaInteiros(9, 2));
     }
 }
 
