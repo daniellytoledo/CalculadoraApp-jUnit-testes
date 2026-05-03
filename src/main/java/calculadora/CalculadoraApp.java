@@ -1,3 +1,5 @@
+package calculadora;
+
 public class CalculadoraApp {
 
     public int somaInteiros(int a, int b) {

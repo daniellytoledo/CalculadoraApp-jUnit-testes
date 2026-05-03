@@ -1,3 +1,5 @@
+package pedidos;
+
 public class ServicoDePedido {
 
     private final RepositorioDePedidos repositorio;

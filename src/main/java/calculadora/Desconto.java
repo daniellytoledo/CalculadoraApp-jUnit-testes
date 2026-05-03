@@ -1,3 +1,5 @@
+package calculadora;
+
 public class Desconto {
     public int descontoProgressivo(int quantidade) {
         if (quantidade <= 10) {

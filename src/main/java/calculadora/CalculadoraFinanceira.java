@@ -1,3 +1,5 @@
+package calculadora;
+
 public class CalculadoraFinanceira {
 
     private final ConversorDeMoeda conversor;
